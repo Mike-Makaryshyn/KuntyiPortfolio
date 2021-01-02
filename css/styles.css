@@ -95,7 +95,7 @@ img{
   left: 0;
   right: 0;
   margin: auto;
-  top: 2rem;
+  top: 4rem;
   background-color: var(--first-color);
 }
 .section{
@@ -349,7 +349,7 @@ img{
 }
 .skills__img{
   border-radius: .5rem;
-  margin-left: 80px;
+  padding: 0 15px;
 }
 .list-item {
   list-style: disc;
