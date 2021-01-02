@@ -133,6 +133,9 @@ img{
   font-weight: var(--font-semi);
 }
 @media screen and (max-width: 768px){
+  .skills__subtitle {
+    display: none;
+  }
   .section-title {
     padding-top: 30px;
   }
