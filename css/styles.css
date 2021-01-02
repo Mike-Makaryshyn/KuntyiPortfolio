@@ -286,6 +286,9 @@ img{
 
 
 /* ===== SKILLS =====*/
+.skills__list{
+  display: none;
+}
 .skills__container{
   row-gap: 2rem;
 
