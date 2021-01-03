@@ -426,6 +426,12 @@ img{
   padding: 0 15px;
   font-family: 'Poppins', sans-serif;
 }
+.contact2 div {
+  margin-bottom: 10px;
+}
+.contact__adress a {
+  color: #0000EB;
+}
 
 /* ===== FOOTER =====*/
 .footer{
@@ -570,14 +576,6 @@ img{
     justify-items: center;
   }
 }
-
-/* .email {
-  
-}
-
-.telephone {
-  
-} */
 
 @media screen and (min-width: 1024px){
   .bd-grid{
