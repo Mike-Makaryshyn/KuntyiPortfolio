@@ -129,7 +129,9 @@ img{
   display: none;
 }
 @media screen and (max-width: 768px){
-  
+  .home {
+    margin-bottom: 90px;
+  }
   .skills__subtitle {
     display: none;
   }
@@ -139,6 +141,7 @@ img{
   .button {
     display: block;
     margin-bottom: 60px;
+
   }
   
   .nav__menu{
@@ -174,6 +177,7 @@ img{
 .nav__logo{
   color: var(--second-color);
   position: relative;
+  padding-left: 15px;
 }
 /* .nav__logo::after{
   content: "";
@@ -208,13 +212,6 @@ img{
 }
 
 /*===== HOME =====*/
-.par__mob {
-  display: block;
-  padding: 15px;
-  
-}
-
-
 .home__img {
 
   display: none;
@@ -229,6 +226,7 @@ img{
 .home__title{
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
+  padding-left: 15px;
 }
 .home__title-color{
   color: var(--first-color);
@@ -267,6 +265,7 @@ img{
 
 /*BUTTONS*/
 .button{
+  
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
