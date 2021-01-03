@@ -134,17 +134,15 @@ img{
   }
   .home {
     margin-bottom: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .skills__subtitle {
     display: none;
   }
   .section-title {
     padding-top: 30px;
-  }
-  .button {
-    display: block;
-    margin-bottom: 60px;
-
   }
   
   .nav__menu{
@@ -181,6 +179,7 @@ img{
   color: var(--second-color);
   position: relative;
   padding-left: 15px;
+  
 }
 /* .nav__logo::after{
   content: "";
@@ -272,7 +271,7 @@ img{
   background-color: var(--first-color);
   color: #fff;
   padding: .75rem 2.5rem;
-  margin-left: 75px;
+  margin-left: 20px;
   margin-bottom: 15px;
   font-weight: var(--font-semi);
   border-radius: .5rem;
