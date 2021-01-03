@@ -23,21 +23,25 @@
     <!--===== HEADER =====-->
 
     <header class="l-header">
-        <nav class="nav bd-grid">
+        <nav class="nav">
             <div>
-                <a href="#" class="nav__logo">Dr.Kuntyi Oleg</a>
+                <a href="#" class="nav__logo">Доктор Штрутень</a>
             </div>
+
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item lang-place"><a href="#home" class="nav__link active">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#qualification" class="nav__link">Qualification</a></li>
                     <li class="nav__item"><a href="#mem" class="nav__link">Membership</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-
                 </ul>
+                <div class="header__translate">
+                    <a href="eng.html" class="eng"><img src="img/eng1.png" alt=""></a>
+                    <a href="index.html" class="ukr"><img src="img/ukr1.png" alt=""></a>
+                </div>
             </div>
 
             <div class="nav__toggle" id="nav-toggle">
@@ -45,14 +49,16 @@
             </div>
         </nav>
     </header>
-    <div class="header__translate">
-        <div><a href="eng.html" class="eng"><img src="img/eng.png" alt=""></a></div>
-        <div><a href="index.html" class="ukr"><img src="img/ukr.png" alt=""></a></div>
-    </div>
+
+
 
     <main class="l-main">
         <!--===== HOME =====-->
         <section class="home bd-grid" id="home">
+
+            <div class="par__mob">
+                <img class="home__img-mobile" src="img/main.jpg" alt="">
+            </div>
             <div class="home__data">
                 <h1 class="home__title"><span class="home__title-color">Kuntyi
                         Oleg</span><br>Otolaryngologist
@@ -68,10 +74,10 @@
                 <a href="https://www.instagram.com/olezka19940511/?hl=uk" class="home__social-icon"><i
                         class='bx bxl-instagram-alt'></i></a>
             </div>
-
-            <div class="home__img">
-                <img src="img/main.jpg" alt="">
+            <div>
+                <img class="home__img" src="img/main.jpg" alt="">
             </div>
+
         </section>
         <!--===== ABOUT =====-->
         <section class=" about section " id="about">
@@ -83,8 +89,7 @@
                     bd-grid
                 </div> -->
 
-                <div>
-                    <!-- <h2 class="about__subtitle">I am Oleg</h2> -->
+                <div class="about__alltext">
                     <p class="about__text">Лікар-отоларинголог,
                         член European Rhinologic Society, Асоціації амбулаторної медицини, American Academy of
                         Otolaryngology-Head and Neck Surgery (AAO-HNS), Українська Асоціації Отоларингологів
@@ -278,7 +283,7 @@
 
 
             <div class="contact2">
-                <div class="contact__adress">Чернігівська 3</div>
+                <div class="contact__adress">Address: Chernigivdka 3</div>
                 <div class="email">
                     <span>My Email:</span> <a href="mailTo:olezka19940511@gmail.com"> Olezka19940511@gmail.com</a>
                 </div>
@@ -299,7 +304,7 @@
                     class='bx bxl-facebook'></i></a>
             <a href="https://www.instagram.com/olezka19940511/?hl=uk" class="footer__icon"><i
                     class='bx bxl-instagram'></i></a>
-            <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-telegram'></i></a>
         </div>
         <p>&#169; 2021 copyright all right reserved</p>
     </footer>
