@@ -133,7 +133,7 @@ img{
     margin: 15px;
   }
   .home {
-    margin-bottom: 145px;
+    margin-bottom: 170px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -604,6 +604,10 @@ img{
 }
 
 @media screen and (max-width: 766px){
+  .home__img {
+    transform: translateY(100px);
+    margin-right: 100px;
+  }
   
   .skills__img{
     border-radius: 0;
@@ -649,5 +653,21 @@ img{
   }
   to{
     opacity: 1;
+  }
+}
+@media screen and (max-height: 500px){
+  .home {
+    padding-top: 60px;
+    margin-bottom: 200px;
+  }
+  .home__img {
+    transform: translateY(60px);
+  }
+  .home__data{
+    transform: translateY(340px);
+    
+  }
+  .button {
+    display: none;
   }
 }
