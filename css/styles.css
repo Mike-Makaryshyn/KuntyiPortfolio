@@ -480,6 +480,7 @@ button::-moz-focus-inner {
   border: none;
   background-color: transparent;
   z-index: 5;
+  padding: 15px;
   cursor: pointer;
 }
 
@@ -564,11 +565,19 @@ button::-moz-focus-inner {
   max-width: 625px;
   margin: 0 auto;
   width: 100%;
+  
+}
+.patient__list a span {
+  color: #000000;
+}
+.patient__list a {
+  text-decoration: underline;
 }
 .patient-bar{
   margin: 0 15px;
   margin-top: 10px;
 }
+
 /* ===== FOOTER =====*/
 .footer{
   background-color: var(--second-color);
