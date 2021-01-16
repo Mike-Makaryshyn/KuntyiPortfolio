@@ -1,3 +1,4 @@
+
 /*===== MENU SHOW =====*/
 const showMenu = (toggleId,navId) => {
     const toggle = document.getElementById(toggleId),
@@ -46,28 +47,30 @@ trigger.forEach((item,i) => {
 
 
 //  СЛАЙДЕР
-// $('.heroes__slider-img').slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     asNavFor: '.heroes__slider-text',
-//     prevArrow: '<button class="slick-btn slick-prev"><img src="img/icons/arrow-left.png" alt="prev"></button>',
-//     nextArrow: '<button class="slick-btn slick-next"><img src="img/icons/arrow-right.png" alt="next"></button>',
-//     // responsive: [
-//     //    {
-//     //       breakpoint: 769,
-//     //       settings: {
-//     //          arrows: false
-//     //       }
-//     //    }
-//     // ] -  выклает стрелки на ширыне екрана(769px). Тут (в js файле) приоретет к css, по етому там не откучаються.
-//  });
-//  $('.heroes__slider-text').slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     asNavFor: '.heroes__slider-img',
-//     fade: true,
-//     arrows: false
-//  });
+$('.news__slider-img').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.news__slider-text',
+    prevArrow: '<button class="slick-btn slick-prev"><img src="img/left.svg" alt="prev"></button>',
+    nextArrow: '<button class="slick-btn slick-next"><img src="img/right.svg" alt="next"></button>',
+    dots: true,
+    // responsive: [
+    //     {
+    //         breakpoint: 769,
+    //         settings: {
+    //             arrows: false
+    //         }
+    //     }
+    // ]
+
+});
+$('.news__slider-text').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.news__slider-img',
+    fade: true,
+    arrows: false
+});
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 // const sr = ScrollReveal({

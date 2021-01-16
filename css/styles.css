@@ -1,5 +1,7 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Kelly+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 /*===== VARIABLES CSS =====*/
 :root{
   --header-height: 3rem;
@@ -47,6 +49,9 @@
 }
 
 /*===== BASE =====*/
+*{
+  outline: none;
+}
 *,::before,::after{
   box-sizing: border-box;
 }
@@ -55,9 +60,11 @@ html{
 }
 body{
   background: url("../img/light-1282314_960_720.webp") no-repeat center center/cover;
+  background-color: #E3F0F2;
   background-attachment: fixed;
   margin: var(--header-height) 0 0 0;
-  font-family: var(--body-font);
+  /* font-family: var(--body-font); */
+  font-family: 'Nunito', sans-serif;
   font-size: var(--normal-font-size);
   color: var(--second-color);
 }
@@ -86,6 +93,7 @@ img{
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
   text-align: center;
+  
 }
 .section-title::after{
   position: absolute;
@@ -129,6 +137,15 @@ img{
   display: none;
 }
 @media screen and (max-width: 768px){
+  .button{
+    display: block;
+    text-align: center;
+    margin: 0px;
+   }
+  .home__title {
+    text-align: center;
+    font-family: 'Kelly Slab', cursive;
+}
   .work__img {
     margin: 15px;
   }
@@ -229,7 +246,6 @@ img{
 .home__title{
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
-  padding-left: 15px;
 }
 .home__title-color{
   color: var(--first-color);
@@ -268,11 +284,11 @@ img{
 
 /*BUTTONS*/
 .button{
+  margin: 0 5px;
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
   padding: .75rem 2.5rem;
-  margin-left: 20px;
   margin-bottom: 15px;
   font-weight: var(--font-semi);
   border-radius: .5rem;
@@ -371,6 +387,109 @@ img{
 .skills__img{
   border-radius: .5rem;
   padding: 55px 15px 15px 15px;
+}
+/* .news {
+  
+} */
+a:focus {
+   outline: none;
+  }
+.news{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.news__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news__slider-img {
+  max-width: 575px;
+  outline-style: none;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  height: 470px;
+  border-radius: 10px;
+}
+.news__slider-img:hover{
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
+  transition: all 0.5s ease;
+}
+
+.news__slider-img a {
+display: block;
+}
+
+.news__slider-img a img {
+  max-width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.news__slider-text {
+  
+  max-width: 450px;
+}
+.news__slider-text p {
+
+  margin-bottom: 20px;
+
+  line-height: 26px;
+}
+.slick-dots {
+  display: flex;
+  transform: translateY(-4px);
+  justify-content: center;
+  align-items: center;
+}
+.slick-dots li {
+list-style: none;
+}
+.slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color:  #a8a8a8;
+  padding:0;
+  border:0;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family:inherit;
+  margin-right: 5px;
+  outline: none;
+}
+.slick-dots li.slick-active button {
+  background-color: #5e5e5e;
+}
+button::-moz-focus-inner {
+  padding:0;
+  border:0;
+  
+}
+
+
+.slick-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 10px;
+  outline: none;
+}
+
+.slick-next {
+  outline: none;
+  right: 10px;
 }
 
 .list-item {
@@ -594,6 +713,18 @@ img{
   }
 }
 @media screen and (max-width: 1024px){
+  .news__inner {
+    display: block;
+    text-align: center;
+    padding: 0 15px;
+    padding-bottom: 10px;
+  }
+  .news__slider-text p {
+    text-align: center;
+  }
+  .news__slider-img {
+    margin-right: 0;
+  }
   .header__translate {
     display: flex;
     padding-top: 25px;
@@ -604,6 +735,13 @@ img{
 }
 
 @media screen and (max-width: 766px){
+  
+  .skills__data:hover{
+    box-shadow: none;
+  }
+  .home__data{
+    text-align: center;
+  }
   .home__img {
     transform: translateY(100px);
     margin-right: 100px;
