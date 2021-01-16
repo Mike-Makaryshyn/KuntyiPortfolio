@@ -28,8 +28,9 @@ navLink.forEach(n => n.addEventListener('click',linkAction));
 
 /*===== tab menu =====*/
 
-const menuList = document.querySelectorAll('.skills__list'),
-    trigger = document.querySelectorAll('.skills__data');
+const skillsParent = document.querySelector('.skills__container'),
+    menuList = skillsParent.querySelectorAll('.skills__list'),
+    trigger = skillsParent.querySelectorAll('.skills__data');
 
 
 trigger.forEach((item,i) => {

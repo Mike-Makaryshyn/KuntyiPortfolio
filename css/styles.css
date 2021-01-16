@@ -559,6 +559,16 @@ button::-moz-focus-inner {
   color: #0000EB;
 }
 
+/*PATIENT */
+.patient__list {
+  max-width: 625px;
+  margin: 0 auto;
+  width: 100%;
+}
+.patient-bar{
+  margin: 0 15px;
+  margin-top: 10px;
+}
 /* ===== FOOTER =====*/
 .footer{
   background-color: var(--second-color);
@@ -714,6 +724,9 @@ button::-moz-focus-inner {
   }
 }
 @media screen and (max-width: 1024px){
+  .news__slider-img:hover{
+    box-shadow: none;
+  }
   .news__inner {
     display: block;
     text-align: center;
