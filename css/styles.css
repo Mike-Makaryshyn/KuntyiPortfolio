@@ -570,9 +570,6 @@ button::-moz-focus-inner {
 .patient__list a span {
   color: #000000;
 }
-.patient__list a {
-  text-decoration: underline;
-}
 .patient-bar{
   margin: 0 15px;
   margin-top: 10px;
@@ -758,7 +755,10 @@ button::-moz-focus-inner {
 }
 
 @media screen and (max-width: 766px){
-  
+  .home {
+    padding: 0;
+    height: 100vh;
+  }
   .skills__data:hover{
     box-shadow: none;
   }
@@ -767,7 +767,6 @@ button::-moz-focus-inner {
   }
   .home__img {
     transform: translateY(100px);
-    margin-right: 100px;
   }
   
   .skills__img{
@@ -818,8 +817,7 @@ button::-moz-focus-inner {
 }
 @media screen and (max-height: 500px){
   .home {
-    padding-top: 60px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
   }
   .home__img {
     transform: translateY(60px);
